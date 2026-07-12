@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1751890000002,
+    "name": "Alex Rivera (Pro Customer)",
+    "email": "alex.rivera@buzzwhizz.com",
+    "avatar": "👑",
+    "interests": [
+      "technology",
+      "startups",
+      "memes",
+      "business"
+    ],
+    "memberSince": "Jan 2026",
+    "status": "VIP Pro",
+    "lastLogin": "2026-07-06T22:25:00.000Z"
+  },
+  {
+    "id": 1751890000003,
+    "name": "Yatharth Mulani",
+    "email": "yatharth.mulani@gmail.com",
+    "avatar": "⚡",
+    "interests": [
+      "technology",
+      "crypto",
+      "memes"
+    ],
+    "memberSince": "Jun 2026",
+    "status": "Verified",
+    "lastLogin": "2026-07-06T20:15:00.000Z"
+  },
+  {
+    "id": 1751890000004,
+    "name": "Priya Sharma",
+    "email": "priya.sharma@techcorp.in",
+    "avatar": "🚀",
+    "interests": [
+      "business",
+      "startups",
+      "technology"
+    ],
+    "memberSince": "May 2026",
+    "status": "Verified",
+    "lastLogin": "2026-07-05T18:40:00.000Z"
+  }
+]
