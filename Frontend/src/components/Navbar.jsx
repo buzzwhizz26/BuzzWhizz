@@ -119,20 +119,6 @@ export default function Navbar({ onCategoryChange }) {
             {t('nav.shorts')}
           </Link>
           
-          <Link
-            to="/login"
-            className={`px-4 py-2 rounded-xl text-xs font-black uppercase tracking-widest transition-all whitespace-nowrap flex items-center gap-1.5 ${
-              location.pathname === '/login'
-                ? 'bg-orange-primary text-white shadow-md'
-                : customer
-                ? 'bg-gradient-to-r from-orange-500/15 to-amber-500/15 text-orange-primary border border-orange-primary/30 hover:bg-orange-primary hover:text-white'
-                : 'bg-gray-100 dark:bg-dark-card text-light-muted dark:text-dark-muted hover:bg-orange-primary hover:text-white'
-            }`}
-          >
-            <span>{customer ? customer.avatar || '👤' : '⚡'}</span>
-            <span>{customer ? customer.name.split(' ')[0] : t('nav.login', 'Sign In')}</span>
-          </Link>
-          
           <div className="w-px h-6 bg-gray-200 dark:bg-dark-border mx-2" />
           
           <div className="flex items-center gap-3">
@@ -169,6 +155,20 @@ export default function Navbar({ onCategoryChange }) {
             >
               {t('nav.focus_mode')}
             </button>
+
+            <Link
+              to="/login"
+              className={`px-4.5 py-2.5 rounded-xl text-xs font-black uppercase tracking-widest transition-all whitespace-nowrap flex items-center gap-1.5 ${
+                location.pathname === '/login'
+                  ? 'bg-orange-primary text-white shadow-md'
+                  : customer
+                  ? 'bg-gradient-to-r from-orange-500/15 to-amber-500/15 text-orange-primary border border-orange-primary/30 hover:bg-orange-primary hover:text-white shadow-sm'
+                  : 'bg-gray-100 dark:bg-dark-card text-light-muted dark:text-dark-muted hover:bg-orange-primary hover:text-white border border-gray-200/60 dark:border-dark-border shadow-sm'
+              }`}
+            >
+              <span>{customer ? customer.avatar || '👤' : '⚡'}</span>
+              <span>{customer ? customer.name.split(' ')[0] : t('nav.login', 'Sign In')}</span>
+            </Link>
           </div>
         </div>
 
